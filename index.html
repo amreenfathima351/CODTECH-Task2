@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <input type="text" id="cityInput" class="cityInput" placeholder="Search">
+            <div class="search-icon" onclick="search()">
+                <img src="Assets/search.png" alt="Search">
+            </div>
+        </div>
+        <div class="weather-image">
+            <img id="weatherIcon" src="Assets/clear.png" alt="Weather Icon">
+        </div>
+        <div class="weather-temp">30.54°c</div>
+        <div class="weather-location">Chennai</div>
+        <div class="data-container">
+            <div class="element">
+                <img src="Assets/humidity.png" class="icon" alt="Humidity">
+                <div class="data">
+                    <div id="humidityPercent">84%</div>
+                    <div class="text">Humidity</div>
+                </div>
+            </div>
+            <div class="element">
+                <img src="Assets/wind.png" class="icon" alt="Wind Speed">
+                <div class="data">
+                    <div id="windRate">4.63 km/h</div>
+                    <div class="text">Wind Speed</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
